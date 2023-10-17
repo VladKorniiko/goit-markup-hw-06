@@ -54,10 +54,15 @@
             </li>
           </ul>
         </address>
-        <button id="mob-menu-btn" class="mobile-btn" type="button"></button>
+        <!-- MOB MENU -->
+        <button id="mob-menu-btn" class="mobile-btn" type="button"><svg class="mob-menu-open" width="24" height="24">
+            <use href="./images/icons.svg#icon-heroicons-solid"></use>
+          </svg></button>
       </div>
       <div id="mob-menu" class="mob-menu">
-        <button id="mob-menu-close" class="mobile-btn-close" type="button"></button>
+        <button id="mob-menu-close" class="mobile-btn-close" type="button"><svg class="modal-close" width="8" height="8">
+            <use href="./images/icons.svg#icon-close-black"></use>
+          </svg></button>
         <ul class="mobile-menu">
             <li class="mobile-menu-iteam">
               <a class="mobile-menu-link active" href="./index.html">Studio</a>
@@ -627,10 +632,10 @@
               ><span class="new-box"
                 ><svg class="icon-check" width="10" height="8">
                   <use href="./images/icons.svg#icon-check" /></svg></span
-              >I accept the terms and conditions of the
+              ><span class="span-privacy-text">I accept the terms and conditions of the
               <a href="" target="_blank" class="check-link"
                 >Privacy Policy</a
-              ></label
+              ></span></label
             >
           </div>
           <button type="submit" class="modal-form-btn">Send</button>
