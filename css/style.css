@@ -1173,4 +1173,11 @@ input:checked + .check-text > .new-box {
     padding-top: 120px;
     padding-bottom: 120px;
   }
+
+  .address-link {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    padding: 12px 0;
+  }
 }
