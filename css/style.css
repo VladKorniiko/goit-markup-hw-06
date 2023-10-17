@@ -244,12 +244,22 @@ section {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/bg-image-main.jpg);
+    url(../images/bg-main-mob.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   margin: 0 auto;
   max-width: 320px;
+}
+
+@media (min-resolution: 192dpi) {
+  .main-info {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/bg-main-mob-x2.jpg);
+  }
 }
 
 .main-info-title {
@@ -913,6 +923,24 @@ input:checked + .check-text > .new-box {
 }
 
 @media screen and (min-width: 768px) {
+  .main-info {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/bg-main-tab.jpg);
+  }
+
+  @media (min-resolution: 192dpi) {
+    .main-info {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/bg-main-tab-x2.jpg);
+    }
+  }
+
   .container {
     max-width: 768px;
   }
@@ -1023,6 +1051,24 @@ input:checked + .check-text > .new-box {
   }
 }
 @media screen and (min-width: 1158px) {
+  .main-info {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/bg-main.jpg);
+  }
+
+  @media (min-resolution: 192dpi) {
+    .main-info {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/bg-main-x2.jpg);
+    }
+  }
+
   .container {
     max-width: 1158px;
     padding: 0 15px 0 15px;
