@@ -84,7 +84,6 @@ section {
   text-transform: uppercase;
   padding: 24px 0;
   margin: 0 auto;
-  margin-right: 76px;
 }
 
 .span-logo {
@@ -206,14 +205,13 @@ section {
   color: #404bbf;
 }
 
-.mobile-menu-iteam {
+.mobile-menu-iteam:not(:last-child) {
   margin-bottom: 40px;
 }
 
 .soc-list-mob {
   display: flex;
   align-items: center;
-  justify-content: center;
   gap: 40px;
 }
 
@@ -221,7 +219,7 @@ section {
   margin-bottom: 48px;
 }
 
-.address-mobile-iteam {
+.address-mobile-iteam:not(:last-child) {
   margin-bottom: 24px;
 }
 
@@ -336,8 +334,7 @@ section {
   line-height: 1.1;
   letter-spacing: 0.02em;
   margin-bottom: 8px;
-  display: flex;
-  justify-content: center;
+  text-align: center;
 }
 
 .advantages-text {
@@ -518,6 +515,7 @@ section {
 .footer {
   background: #2e2f42;
   padding-top: 97.5px;
+  padding-bottom: 96px;
 }
 
 .footer-logo {
@@ -550,12 +548,18 @@ section {
   justify-content: center;
   flex-wrap: wrap;
 }
+
+@media screen and (max-width: 1157px) {
+  .container-foter {
+    row-gap: 72px;
+    column-gap: 24px;
+  }
+}
 .logo-container {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   align-items: center;
-  margin-bottom: 72px;
 }
 
 .soc-subtitel {
@@ -581,7 +585,6 @@ section {
   flex-wrap: wrap;
   align-content: center;
   justify-content: center;
-  margin-bottom: 72px;
 }
 
 .soc-link-footer {
@@ -627,7 +630,6 @@ section {
   flex-wrap: wrap;
   align-content: center;
   justify-content: center;
-  margin-bottom: 96px;
 }
 
 .subscribe-input {
@@ -954,7 +956,7 @@ input:checked + .check-text > .new-box {
   }
 
   .advantages-sutitle {
-    display: block;
+    text-align: start;
   }
 
   .team-list {
@@ -983,18 +985,14 @@ input:checked + .check-text > .new-box {
 
   .subscribe-column {
     display: block;
-    margin-left: 108px;
   }
 
   .logo-container {
     display: block;
-    margin-right: 24px;
-    margin-left: 108px;
   }
 
   .soc-container {
     display: block;
-    margin-bottom: 104px;
   }
 
   .footer-text {
@@ -1002,6 +1000,7 @@ input:checked + .check-text > .new-box {
   }
 
   .container-foter {
+    max-width: 584px;
     align-items: normal;
     justify-content: start;
   }
@@ -1048,6 +1047,10 @@ input:checked + .check-text > .new-box {
     width: 408px;
     min-height: 584px;
     padding: 72px 24px 24px;
+  }
+
+  .header-logo {
+    margin-right: 120px;
   }
 }
 @media screen and (min-width: 1158px) {
@@ -1179,5 +1182,13 @@ input:checked + .check-text > .new-box {
     line-height: 1.5;
     letter-spacing: 0.02em;
     padding: 12px 0;
+  }
+
+  .subscribe-column {
+    margin-left: 80px;
+  }
+
+  .header-logo {
+    margin-right: 76px;
   }
 }
