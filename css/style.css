@@ -555,10 +555,6 @@ input:checked + .check-text > .new-box {
   gap: 72px;
 }
 
-.advantages-iteam {
-  border: 1px solid #000;
-}
-
 .advantages-iteam h3 {
   font-weight: 700;
   font-size: 36px;
@@ -600,8 +596,6 @@ input:checked + .check-text > .new-box {
   align-items: center;
   text-align: center;
   border-radius: 0px 0px 4px 4px;
-  border: 1px solid #000;
-  border-top: none;
 }
 
 .team-item {
